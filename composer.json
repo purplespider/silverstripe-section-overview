@@ -1,5 +1,5 @@
 {
-	"name": "purplespider/silverstripe-section-overview-page",
+	"name": "purplespider/section-overview",
 	"description": "A simple section overview page that provides summaries and links to it's subpages.",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "overview", "page"],
