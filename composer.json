@@ -1,0 +1,14 @@
+{
+	"name": "purplespider/silverstripe-section-overview-page",
+	"description": "A simple section overview page that provides summaries and links to it's subpages.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "overview", "page"],
+		"authors": [{
+			"name": "James Cocker",
+			"email": "ssmodules@pswd.biz"
+	}],
+	"require": {
+		"silverstripe/framework": "3.*",
+		"silverstripe/cms": "3.*"
+	}
+}
