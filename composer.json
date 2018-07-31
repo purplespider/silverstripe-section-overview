@@ -1,7 +1,7 @@
 {
 	"name": "purplespider/section-overview",
 	"description": "A simple section overview page that provides summaries and links to it's child pages.",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"homepage": "https://github.com/purplespider/silverstripe-section-overview",
 	"keywords": ["silverstripe", "overview", "page"],
 	"license": "BSD-3-Clause",
