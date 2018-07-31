@@ -1,6 +1,6 @@
 {
 	"name": "purplespider/section-overview",
-	"description": "A simple section overview page that provides summaries and links to it's subpages.",
+	"description": "A simple section overview page that provides summaries and links to it's child pages.",
 	"type": "silverstripe-module",
 	"homepage": "https://github.com/purplespider/silverstripe-section-overview",
 	"keywords": ["silverstripe", "overview", "page"],
@@ -13,7 +13,12 @@
 		"issues": "https://github.com/purplespider/silverstripe-section-overview/issues"
 	},
 	"require": {
-		"silverstripe/framework": "3.*",
-		"silverstripe/cms": "3.*"
+		"silverstripe/framework": "^4.0",
+		"silverstripe/cms": "^4.0"
+	},
+	"extra": {
+		"expose": [
+			 "client/dist"
+		]
 	}
 }

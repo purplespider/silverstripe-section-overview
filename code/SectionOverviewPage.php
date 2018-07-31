@@ -1,21 +1,25 @@
 <?php
+
+namespace PurpleSpider\SectionOverview;
+
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use Page;
+
 class SectionOverviewPage extends Page
 {
     
-    public static $singular_name = "Section Overview";
-    public static $description = 'Shows the Title, Summary & Links for all subpages';
+    private static $singular_name = "Section Overview";
+    private static $description = 'Shows the Title, Summary & Links for all subpages';
  
-    public static $icon = "section-overview/images/text_list_bullets";
+    // private static $icon = "section-overview/images/text_list_bullets";
+    
+    private static $icon = 'purplespider/section-overview: /client/dist/images/icons/page_white_list.gif';
     
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-        $fields->addFieldToTab("Root.Main", $editor = new HTMLEditorField('Content', 'Intro Text'), "Metadata");
+        $fields->addFieldToTab("Root.Main", $editor = HTMLEditorField::create('Content', 'Intro Text'), "Metadata");
         $editor->setRows(20);
         return $fields;
     }
-}
-
-class SectionOverviewPage_Controller extends Page_Controller
-{
 }
