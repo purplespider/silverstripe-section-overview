@@ -1,3 +1,3 @@
 <?php
 
-Object::add_extension('Page', 'SOPageExtension');
+SS_Object::add_extension('Page', 'SOPageExtension');
