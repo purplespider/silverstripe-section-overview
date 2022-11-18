@@ -11,9 +11,7 @@ class SectionOverviewPage extends Page
     private static $singular_name = "Section Overview";
     private static $description = 'Shows the Title, Summary & Links for all subpages';
  
-    // private static $icon = "section-overview/images/text_list_bullets";
-    
-    private static $icon = 'purplespider/section-overview: /client/dist/images/icons/page_white_list.gif';
+    private static $icon_class = 'font-icon-p-home';
     
     public function getCMSFields()
     {
