@@ -11,7 +11,7 @@ class SectionOverviewPage extends Page
     private static $singular_name = "Section Overview";
     private static $description = 'Shows the Title, Summary & Links for all subpages';
  
-    private static $icon_class = 'font-icon-p-home';
+    private static $icon_class = 'font-icon-p-list';
     
     public function getCMSFields()
     {
