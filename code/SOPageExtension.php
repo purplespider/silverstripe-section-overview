@@ -3,17 +3,23 @@
 namespace PurpleSpider\SectionOverview;
 
 use SilverStripe\Forms\TextareaField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\Forms\FieldList;
 
-class SOPageExtension extends DataExtension
+class SOPageExtension extends Extension
 {
-    
+
     private static $db = array(
         "SummaryText" => "Text"
     );
-    
-    public function updateCMSFields(FieldList $fields)
+
+    private static array $scaffold_cms_fields_settings = [
+        'ignoreFields' => [
+            'SummaryText',
+        ],
+    ];
+
+    protected function updateCMSFields(FieldList $fields)
     {
         if ($this->owner->Parent()->ClassName == "PurpleSpider\SectionOverview\SectionOverviewPage") {
             $summaryfield = new TextareaField('SummaryText', 'Summary');
