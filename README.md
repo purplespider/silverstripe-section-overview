@@ -12,7 +12,7 @@ By default the summary is grabbed from a page's Content field, but this module a
  * James Cocker (ssmodulesgithub@pswd.biz)
  
 ## Requirements
- * Silverstripe 4.0+
+ * Silverstripe 6.0+ (use version 3.x of this module for Silverstripe 5, or 2.x for Silverstripe 4)
  
  ## Installation Instructions
 
